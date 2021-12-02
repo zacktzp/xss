@@ -49,7 +49,7 @@
 			var html = '';
 
 			html += '<p>Your search query:</p>';
-			html += '<pre>' + q + '</pre>';
+			html += '<pre></pre>';
 			html += '<ul>';
 
 			for (var index = 0; index < results.length; index++) {
@@ -59,6 +59,8 @@
 			html += '</ul>';
 
 			resultsEl.innerHTML = html;
+			var queryTextEl = document.querySelector('#results pre');
+			queryTextEl.textContent = q;
 		}
 
 		function getQueryParameter(name) {
