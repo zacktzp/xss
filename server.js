@@ -18,7 +18,7 @@ app.use(session({
 	}
 }));
 
-// Start listening to requests on the local machine at port 3000.
-app.listen(3000, function() {
-	console.log('Server listening at localhost:3000');
+// Start listening to requests on the local machine at port 80.
+app.listen(80, function() {
+	console.log('Server listening at localhost:80');
 });
