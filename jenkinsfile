@@ -1,0 +1,14 @@
+pipeline {
+  agent {
+      docker {
+          image 'composer:latest'
+          }
+      }
+      stages {
+        stage {"build'} {
+          steps {
+            sh '/usr/bin/npm install'
+            }
+         }
+      }
+}
